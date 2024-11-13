@@ -1,81 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
-:root{
-    --white: rgba(255, 255, 255, 0.075);
-    --green: rgb(159, 250, 167);
-    --red: rgb(255, 147, 147);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-
-body{
-    height: 100vh;
-    padding: 10px;
-    background-color: rgb(27, 0, 70);
-}
-main{
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    height: 50vh;
-    height: 97vh;
-}
-div:nth-of-type(1){
-    width: 70%;
-    background-color: var(--white);
-    border: 2px solid white
-}
-div:nth-of-type(2){
-    width: 30%;
-    background-color: var(--white);
-    border: 2px solid white
-}
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-    align-items: center;
-}
-fieldset{
-    display: flex;
-    width: 100%;
-    gap: 5px;
-    border: none;
-}
-label{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: white;
-    gap: 5px;
+:root {
+  --white: rgba(255, 255, 255, 0.075);
+  --green: rgb(159, 250, 167);
+  --red: rgb(255, 147, 147);
 }
 
-button{
-    height: 10vh;
-    width: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-button:nth-of-type(1){
-    background-color: var(--green);
+body {
+  background-color: rgb(27, 0, 70);
+}
+main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1400px;
+  height: 100%;
+  margin-inline: auto;
+  padding: 10px;
+}
+main > :where(div:nth-of-type(1)) {
+  width: 100%;
+  flex: 0 1 auto;
+  background-color: var(--white);
+  border: 2px solid white;
+}
+main > :where(div:nth-of-type(2)) {
+  width: 350px;
+  flex: 1 0 auto;
+  background-color: var(--white);
+  border: 2px solid white;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  align-items: center;
+}
+fieldset {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  border: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  gap: 5px;
 }
 
-button:nth-of-type(2){
-    background-color: var(--red);
+button {
+  padding: 15px;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid black;
 }
 
-button:nth-of-type(3){
-    background-color: var(--green);
-    width: 50%;
+button:nth-of-type(1) {
+  background-color: var(--green);
 }
 
-input, select{
-    height: 7vh;
-    border-radius: 5px;
+button:nth-of-type(2) {
+  background-color: var(--red);
+}
+
+button:nth-of-type(3) {
+  background-color: var(--green);
+  width: fit-content;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
 }

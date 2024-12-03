@@ -79,3 +79,32 @@ input, select{
     height: 7vh;
     border-radius: 5px;
 }
+
+.Pantalla{
+    display: flex;
+    overflow: auto;
+    align-content: end;
+}
+
+.Pantalla div {
+    flex-shrink: 0;
+}
+
+
+.boxPre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre; /* Asegura que se respete el formato */
+}
+

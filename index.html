@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="boxPre">
+    </div>
     <main>
-        <div></div>
+
+        <div class="Pantalla"></div>    
         <div>
            <form action="">
                 <button>Add div</button>
@@ -17,19 +20,19 @@
                     <!-- Height of divs -->
                     <label for="">
                         Height of divs  
-                        <input type="number" name="" id="">
+                        <input type="number" min="50" max="100" value="50" name="" id="">
                     </label>
                     <!-- Width of divs -->
                     <label for="">
                         Width of divs
-                        <input type="number" name="" id="">
+                        <input type="number" min="50" max="100" value="50" name="" id="">
                     </label>
                 </fieldset>
                 <fieldset>
                     <!-- Margin of divs -->
                     <label for="">
                         Margin of divs
-                        <input type="number" name="" id="">
+                        <input type="number" name="" id="" value="10">
                     </label>
                     <!-- Flex-wrap -->
                     <label for="">
@@ -47,18 +50,13 @@
                         Flex-direction
                         <select name="" id="">
                             <option value="row">row</option>
-                            <option value="row-reverse">row-reverse</option>
                             <option value="column">column</option>
-                            <option value="column-reverse">column-reverse</option>                            
                         </select>                        
                     </label>
                     <!-- Justify-content -->
                     <label for="">
                         Justify-content
                         <select name="" id="">
-                            <option value="flex-start">flex-start</option>
-                            <option value="flex-end">flex-end</option>
-                            <option value="center">center</option>
                             <option value="space-between">space-between</option>
                             <option value="space-around">space-around</option>
                             <option value="space-evenly">space-evenly</option>                            
@@ -91,5 +89,6 @@
            </form> 
         </div>
     </main>
+    <script src="./dist/main.js"></script>
 </body>
 </html>

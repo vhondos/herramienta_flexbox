@@ -99,8 +99,7 @@ marginBox?.addEventListener('change', () => {
 
 generateCode.addEventListener('click', (e:Event) => {
     e.preventDefault()
-    const codigo = document.createElement('DIV')
-    codigo.textContent = `
+    const codigo = `
     <pre>
         padre{
             display: flex;
@@ -111,8 +110,11 @@ generateCode.addEventListener('click', (e:Event) => {
             align-content: ${aligContent.value};
         }    
     </pre>`
-    codigo.classList.add(".popUp")
-    document.querySelector(".boxPre")?.appendChild(codigo)
+    const boxPre = document.getElementById("codigo")
+    boxPre?.classList.add("boxPre")
+    boxPre?.classList.remove("boxPreHidden")
+    boxPre!.innerHTML = codigo
+
 
 })
 

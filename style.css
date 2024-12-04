@@ -101,6 +101,13 @@ input, select{
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.542) !important;
+    display: flex;
+}
+
+
+.boxPreHidden{
+    display: none;
 }
 
 pre {

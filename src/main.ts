@@ -1,4 +1,3 @@
-// Obtiene el pantalla con la clase 'Pantalla'
 const pantalla = document.querySelector('.Pantalla') as HTMLElement;
 const widthBox = document.querySelectorAll('input[type="number"]')[0] as HTMLInputElement;
 const heightBox = document.querySelectorAll('input[type="number"]')[1] as HTMLInputElement;
@@ -14,7 +13,6 @@ let widthPxl = 50
 let heightPxl = 50
 let marginPxl = 10
 
-// Función para agregar un nuevo div
 function addDiv(): void {
   const newDiv = document.createElement('div');
   newDiv.style.width = `${widthPxl}px`;
@@ -26,7 +24,6 @@ function addDiv(): void {
   pantalla.appendChild(newDiv);
 }
 
-// Función para eliminar el último div
 function delDiv(): void {
   if (pantalla.lastElementChild) {
     pantalla.removeChild(pantalla.lastElementChild);
@@ -82,14 +79,13 @@ aligContent.addEventListener('change', () => {
     pantalla.style.alignContent = aligContent.value
 })
 
-// Añade listeners a los botones
 document.querySelector('button:nth-of-type(1)')?.addEventListener('click', (e) => {
-  e.preventDefault(); // Evita el comportamiento por defecto del formulario
+  e.preventDefault(); 
   addDiv();
 });
 
 document.querySelector('button:nth-of-type(2)')?.addEventListener('click', (e) => {
-  e.preventDefault(); // Evita el comportamiento por defecto del formulario
+  e.preventDefault(); 
   delDiv();
 });
 
